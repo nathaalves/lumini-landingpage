@@ -31,9 +31,7 @@ export function Header() {
     <div
       className={cn(
         'fixed left-0 right-0 top-0 z-30 flex w-full items-center justify-between p-4 transition-all duration-500 ease-in-out',
-        isScrolled
-          ? 'bg-white bg-opacity-80 shadow-md backdrop-blur-3xl'
-          : 'bg-transparent'
+        isScrolled ? 'bg-[#003f59] shadow-xl' : 'bg-transparent'
       )}
     >
       <Image
