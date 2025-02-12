@@ -299,6 +299,11 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <div className="fixed bottom-5 right-5">
+        <a href="">
+          <Image src="/whatsapp-96.svg" alt="WhatsApp" width={48} height={48} />
+        </a>
+      </div>
     </div>
   )
 }
