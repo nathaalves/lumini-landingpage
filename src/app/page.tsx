@@ -6,7 +6,6 @@ import {
   HandCoins,
   House,
   MapPinHouse,
-  Menu,
   Sun,
   Tractor
 } from 'lucide-react'
@@ -14,37 +13,13 @@ import Image from 'next/image'
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger
-} from '@/components/ui/sheet'
+
+import { Header } from './_components/Header'
 
 export default function HomePage() {
   return (
     <div className="w-full">
-      <div className="absolute left-0 right-0 top-0 z-10 flex items-center justify-between p-4">
-        <Image
-          src="/logo-icon.png"
-          width={50}
-          height={50}
-          alt="Description of the image"
-        />
-        <Sheet>
-          <SheetTrigger>
-            <Menu className="h-10 w-10 stroke-white" />
-          </SheetTrigger>
-          <SheetContent>
-            <SheetHeader>
-              <SheetTitle className="hidden">
-                Menu de navegação da landing page
-              </SheetTitle>
-            </SheetHeader>
-          </SheetContent>
-        </Sheet>
-      </div>
+      <Header />
       <div className="relative h-svh pt-32">
         <Image
           src="/background-2.jpg"
