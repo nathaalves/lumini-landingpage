@@ -35,7 +35,7 @@ export default function HomePage() {
           </SheetContent>
         </Sheet>
       </div>
-      <div className="relative h-svh pt-40">
+      <div className="relative h-dvh pt-32">
         <Image
           src="/background-2.jpg"
           fill={true}
