@@ -15,18 +15,32 @@ export default {
         sm: 'calc(var(--radius) - 4px)'
       },
       boxShadow: {
-        internal: `
-          rgba(251, 168, 0, 0.9) 0px -43px 25px 0px inset,
-          rgba(251, 168, 0, 0.70) 0px -76px 30px 0px inset,
-          rgba(251, 168, 0, 0.5) 0px -160px 40px 0px inset,
-          rgba(251, 168, 0, 0.06) 0px 2px 1px,
-          rgba(251, 168, 0, 0.09) 0px 4px 2px,
-          rgba(251, 168, 0, 0.09) 0px 8px 4px,
-          rgba(251, 168, 0, 0.09) 0px 16px 8px,
-          rgba(251, 168, 0, 0.09) 0px 32px 16px
-        `
+        internal:
+          'rgba(251, 168, 0, 0.9) 0px -43px 25px 0px inset, rgba(251, 168, 0, 0.70) 0px -76px 30px 0px inset, rgba(251, 168, 0, 0.5) 0px -160px 40px 0px inset, rgba(251, 168, 0, 0.06) 0px 2px 1px, rgba(251, 168, 0, 0.09) 0px 4px 2px, rgba(251, 168, 0, 0.09) 0px 8px 4px, rgba(251, 168, 0, 0.09) 0px 16px 8px, rgba(251, 168, 0, 0.09) 0px 32px 16px'
       },
-      colors: {}
+      colors: {},
+      keyframes: {
+        'accordion-down': {
+          from: {
+            height: '0'
+          },
+          to: {
+            height: 'var(--radix-accordion-content-height)'
+          }
+        },
+        'accordion-up': {
+          from: {
+            height: 'var(--radix-accordion-content-height)'
+          },
+          to: {
+            height: '0'
+          }
+        }
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out'
+      }
     }
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
