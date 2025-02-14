@@ -495,13 +495,19 @@ export default function HomePage() {
             <MessageCircleMore />
             <p>(82) 93618-0098</p>
           </Link>
-          <Link href="#" className="flex items-center gap-2">
+          <Link
+            href="https://www.instagram.com/luminisolenergia"
+            className="flex items-center gap-2"
+          >
             <Instagram />
             <p>@luminisolenergia</p>
           </Link>
-          <div className="flex items-center gap-2">
+          <Link
+            href="mailto:contato@luminisol.com.br?subject=Informações%20sobre%20energia%20solar&body=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20energia%20solar!"
+            className="flex items-center gap-2"
+          >
             <Mail /> <p>contato@luminisol.com.br</p>
-          </div>
+          </Link>
         </div>
         <div>
           <p className="mb-1 text-xl font-bold">Horário de atendimento</p>
