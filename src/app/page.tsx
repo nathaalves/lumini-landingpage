@@ -278,7 +278,7 @@ export default function HomePage() {
           </p>
         </div>
         <div className="mt-8 flex w-full flex-wrap gap-6 font-semibold text-white">
-          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60">
+          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60 shadow-xl">
             <Image
               src="/carport-2.jpg"
               fill
@@ -295,13 +295,13 @@ export default function HomePage() {
                   <HandCoins />
                 </div>
                 <p className="w-36 text-xs">
-                  R$ 40.000,00{' '}
-                  <span className="text-[#fba800]">de economia ao ano</span>
+                  R$ 26.000,00{' '}
+                  <span className="text-[#fba800]">de economia ao mês</span>
                 </p>
               </div>
             </div>
           </div>
-          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60">
+          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60 shadow-xl">
             <Image
               src="/residential.jpg"
               fill
@@ -318,13 +318,13 @@ export default function HomePage() {
                   <HandCoins />
                 </div>
                 <p className="w-36 text-xs">
-                  R$ 2.500,00{' '}
-                  <span className="text-[#fba800]">de economia ao ano</span>
+                  R$ 1.800,00{' '}
+                  <span className="text-[#fba800]">de economia ao mês</span>
                 </p>
               </div>
             </div>
           </div>
-          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60">
+          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60 shadow-xl">
             <Image
               src="/comercial.jpg"
               fill
@@ -342,12 +342,12 @@ export default function HomePage() {
                 </div>
                 <p className="w-36 text-xs">
                   R$ 8.000,00{' '}
-                  <span className="text-[#fba800]">de economia ao ano</span>
+                  <span className="text-[#fba800]">de economia ao mês</span>
                 </p>
               </div>
             </div>
           </div>
-          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60">
+          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60 shadow-xl">
             <Image
               src="/large-power-plants.jpg"
               fill
@@ -365,7 +365,7 @@ export default function HomePage() {
                 </div>
                 <p className="w-36 text-xs">
                   R$ 300.000,00{' '}
-                  <span className="text-[#fba800]">de economia ao ano</span>
+                  <span className="text-[#fba800]">de economia ao mês</span>
                 </p>
               </div>
             </div>
@@ -390,7 +390,7 @@ export default function HomePage() {
               className="-z-10 h-auto w-full object-cover"
               alt=""
             />
-            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60">
+            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60 shadow-xl">
               <div className="mb-4 flex w-full items-center justify-center gap-2">
                 <div>
                   <House className="h-9 w-9" />
@@ -406,7 +406,7 @@ export default function HomePage() {
               className="-z-10 h-auto w-full object-cover"
               alt=""
             />
-            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60">
+            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60 shadow-xl">
               <div className="mb-4 flex w-full items-center justify-center gap-2">
                 <div>
                   <Building2 className="h-9 w-9" />
@@ -422,7 +422,7 @@ export default function HomePage() {
               className="-z-10 h-auto w-full object-cover"
               alt=""
             />
-            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60">
+            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60 shadow-xl">
               <div className="mb-4 flex w-full items-center justify-center gap-2">
                 <div>
                   <Factory className="h-9 w-9" />
@@ -438,7 +438,7 @@ export default function HomePage() {
               className="-z-10 h-auto w-full object-cover"
               alt=""
             />
-            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60">
+            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60 shadow-xl">
               <div className="mb-4 flex w-full items-center justify-center gap-2">
                 <div>
                   <Tractor className="h-9 w-9" />
