@@ -1,19 +1,24 @@
+'use client'
+
 import {
   Building2,
   ChartNoAxesCombined,
+  ChevronRight,
   CircleChevronRight,
   Factory,
   HandCoins,
   House,
   Instagram,
   Mail,
-  MapPinHouse,
+  Menu,
   MessageCircleMore,
   Sun,
   Tractor
 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { type RefObject, useEffect, useState } from 'react'
+import { useRef } from 'react'
 
 import {
   Accordion,
@@ -23,13 +28,109 @@ import {
 } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger
+} from '@/components/ui/sheet'
 
-import { Header } from './_components/Header'
+import { cn } from '@/lib/cn'
 
 export default function HomePage() {
+  const [isScrolled, setIsScrolled] = useState(false)
+  const ref1 = useRef<HTMLDivElement>(null)
+  const ref2 = useRef<HTMLDivElement>(null)
+  const ref3 = useRef<HTMLDivElement>(null)
+  const ref4 = useRef<HTMLDivElement>(null)
+  const ref5 = useRef<HTMLDivElement>(null)
+  const ref6 = useRef<HTMLDivElement>(null)
+
+  const scrollTo = (ref: RefObject<HTMLDivElement>, offset: number) => {
+    const elemento = ref.current
+    if (elemento) {
+      const posicao = elemento.offsetTop - offset
+      window.scrollTo({ top: posicao, behavior: 'smooth' })
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    })
+  }, [])
+
   return (
     <div className="w-full">
-      <Header />
+      <header
+        className={cn(
+          'fixed left-0 right-0 top-0 z-30 flex w-full items-center justify-between p-4 transition-all duration-500 ease-in-out',
+          isScrolled ? 'bg-[#003f59] shadow-xl' : 'bg-transparent'
+        )}
+      >
+        <Image src="/logo.svg" width={150} height={150} alt="logotipo" />
+        <Sheet>
+          <SheetTrigger>
+            <Menu className="h-10 w-10 stroke-white" />
+          </SheetTrigger>
+          <SheetContent>
+            <SheetHeader>
+              <SheetTitle className="hidden">
+                Menu de navegação da landing page
+              </SheetTitle>
+            </SheetHeader>
+            <nav className="mt-10 flex flex-col gap-2">
+              <Button
+                variant="link"
+                className="justify-between font-semibold"
+                onClick={() => scrollTo(ref1, 95)}
+              >
+                Quem Somos <ChevronRight />
+              </Button>
+              <Button
+                variant="link"
+                className="justify-between font-semibold"
+                onClick={() => scrollTo(ref2, 95)}
+              >
+                Projetos <ChevronRight />
+              </Button>
+              <Button
+                variant="link"
+                className="justify-between font-semibold"
+                onClick={() => scrollTo(ref3, 95)}
+              >
+                Soluções <ChevronRight />
+              </Button>
+              <Button
+                variant="link"
+                className="justify-between font-semibold"
+                onClick={() => scrollTo(ref4, 95)}
+              >
+                Faça uma siulação <ChevronRight />
+              </Button>
+              <Button
+                variant="link"
+                className="justify-between font-semibold"
+                onClick={() => scrollTo(ref5, 95)}
+              >
+                FAQ <ChevronRight />
+              </Button>
+              <Button
+                variant="link"
+                className="justify-between font-semibold"
+                onClick={() => scrollTo(ref6, 95)}
+              >
+                Contatos <ChevronRight />
+              </Button>
+            </nav>
+          </SheetContent>
+        </Sheet>
+      </header>
       <div className="relative h-svh pt-32">
         <Image
           src="/background-2.jpg"
@@ -41,7 +142,7 @@ export default function HomePage() {
           <p className="inline-block w-fit bg-gradient-to-r from-[#fba800] to-[#fa7600] bg-clip-text text-5xl font-bold text-transparent">
             Economize 95%
           </p>
-          <p className="text-4xl">da sua conta de energia</p>
+          <p className="text-4xl">na sua conta de energia</p>
           <p className="my-6">
             Chegou a hora de reduzir seus gastos fixos com energia elétrica.
             Faça uma simulação e descubra em poucos segundos o valor do seu
@@ -96,7 +197,10 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center bg-[#003f59] px-10 pb-16">
+      <div
+        ref={ref1}
+        className="flex w-full justify-center bg-[#003f59] px-10 pb-16"
+      >
         <div className="w-full">
           <div className="text-white">
             <div className="flex gap-1">
@@ -125,7 +229,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-full px-10 pb-16 pt-8 text-[#003f59]">
+      <div ref={ref2} className="w-full px-10 pb-16 pt-8 text-[#003f59]">
         <div className="flex gap-1">
           <CircleChevronRight className="stroke-[#fba800]" />
           <p className="font-semibold">Projetos</p>
@@ -232,7 +336,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-full px-10 pb-8">
+      <div ref={ref3} className="w-full px-10 pb-8">
         <div className="text-white">
           <div className="flex gap-1">
             <CircleChevronRight className="stroke-[#fba800]" />
@@ -253,7 +357,7 @@ export default function HomePage() {
             <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 shadow-internal">
               <div className="mb-4 flex w-full items-center justify-center gap-2">
                 <div>
-                  <MapPinHouse className="h-9 w-9" />
+                  <House className="h-9 w-9" />
                 </div>
                 <p className="w-28">Residências e condomínios</p>
               </div>
@@ -309,7 +413,10 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center px-10 py-8 text-center text-[#003f59]">
+      <div
+        ref={ref4}
+        className="flex w-full justify-center px-10 py-8 text-center text-[#003f59]"
+      >
         <div>
           <p>
             A{' '}
@@ -351,7 +458,7 @@ export default function HomePage() {
           sua família.
         </p>
       </div>
-      <div className="w-full px-10 py-8 text-white">
+      <div ref={ref5} className="w-full px-10 py-8 text-white">
         <div className="text-[#003f59]">
           <div className="flex gap-1">
             <CircleChevronRight className="stroke-[#fba800]" />
@@ -478,12 +585,15 @@ export default function HomePage() {
           </AccordionItem>
         </Accordion>
       </div>
-      <div className="flex w-full flex-wrap bg-[#003f59] px-10 py-8 text-sm text-white">
+      <footer
+        ref={ref6}
+        className="flex w-full flex-wrap bg-[#003f59] px-10 py-8 text-sm text-white"
+      >
         <Image
           src="/logo.svg"
           width={150}
           height={150}
-          alt="Description of the image"
+          alt="logotipo"
           className="mb-4"
         />
         <div className="mb-4 flex flex-col gap-1">
@@ -518,7 +628,7 @@ export default function HomePage() {
           &copy; Todos os direis reservados | Luminisol 2025, CNPJ
           12.123.123/0001-12
         </p>
-      </div>
+      </footer>
       <div className="fixed bottom-5 right-5 z-20">
         <Link href="https://wa.me/5582936180098?text=Olá,%20tenho%20interesse%20em%20energia%20solar!">
           <Image src="/whatsapp-96.svg" alt="WhatsApp" width={60} height={60} />
