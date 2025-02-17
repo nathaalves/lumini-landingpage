@@ -287,15 +287,15 @@ export default function HomePage() {
             />
             <div className="absolute bottom-4 left-4 z-10 flex flex-col gap-2">
               <div className="w-fit rounded-lg border-2 border-[#fba800] px-2 py-1 text-xs">
-                <p>+30 módulos</p>
-                <p>900 kWh de geração</p>
+                <p>+500 módulos</p>
+                <p>30.000 kWh de geração</p>
               </div>
               <div className="flex items-center gap-1">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fba800]">
                   <HandCoins />
                 </div>
                 <p className="w-36 text-xs">
-                  R$ 3.500,00{' '}
+                  R$ 40.000,00{' '}
                   <span className="text-[#fba800]">de economia ao ano</span>
                 </p>
               </div>
@@ -311,14 +311,14 @@ export default function HomePage() {
             <div className="absolute bottom-4 left-4 z-10 flex flex-col gap-2">
               <div className="w-fit rounded-lg border-2 border-[#fba800] px-2 py-1 text-xs">
                 <p>+30 módulos</p>
-                <p>900 kWh de geração</p>
+                <p>+2.000 kWh de geração</p>
               </div>
               <div className="flex items-center gap-1">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fba800]">
                   <HandCoins />
                 </div>
                 <p className="w-36 text-xs">
-                  R$ 3.500,00{' '}
+                  R$ 2.500,00{' '}
                   <span className="text-[#fba800]">de economia ao ano</span>
                 </p>
               </div>
@@ -333,15 +333,15 @@ export default function HomePage() {
             />
             <div className="absolute bottom-4 left-4 z-10 flex flex-col gap-2">
               <div className="w-fit rounded-lg border-2 border-[#fba800] px-2 py-1 text-xs">
-                <p>+30 módulos</p>
-                <p>900 kWh de geração</p>
+                <p>+130 módulos</p>
+                <p>9.500 kWh de geração</p>
               </div>
               <div className="flex items-center gap-1">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fba800]">
                   <HandCoins />
                 </div>
                 <p className="w-36 text-xs">
-                  R$ 3.500,00{' '}
+                  R$ 8.000,00{' '}
                   <span className="text-[#fba800]">de economia ao ano</span>
                 </p>
               </div>
@@ -356,15 +356,15 @@ export default function HomePage() {
             />
             <div className="absolute bottom-4 left-4 z-10 flex flex-col gap-2">
               <div className="w-fit rounded-lg border-2 border-[#fba800] px-2 py-1 text-xs">
-                <p>+30 módulos</p>
-                <p>900 kWh de geração</p>
+                <p>+5 mil módulos</p>
+                <p>+350 MWh de geração</p>
               </div>
               <div className="flex items-center gap-1">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fba800]">
                   <HandCoins />
                 </div>
                 <p className="w-36 text-xs">
-                  R$ 3.500,00{' '}
+                  R$ 300.000,00{' '}
                   <span className="text-[#fba800]">de economia ao ano</span>
                 </p>
               </div>
