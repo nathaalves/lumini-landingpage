@@ -155,7 +155,7 @@ export default function HomePage() {
           </SheetContent>
         </Sheet>
       </header>
-      <div className="relative h-svh pt-32">
+      <div className="relative h-svh bg-[#003f59]/80 pt-32 shadow-[#003f59_0px_-50px_36px_-28px_inset]">
         <Image
           src="/background-2.jpg"
           fill
@@ -237,16 +237,30 @@ export default function HomePage() {
           </div>
           <div className="mt-8 flex flex-col gap-6 text-justify text-white">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
-              natus corrupti sint earum aperiam vero? Tempore libero quo
-              voluptate culpa molestias fugit autem odio voluptatum voluptas
-              consectetur, doloremque ex incidunt!
+              Atuando no setor de energia solar desde 2018, a{' '}
+              <span className="font-semibold text-[#fba800]">Luminisol</span> é
+              especializada em projetos, instalação e manutenção de sistemas de
+              energia solar. Nossa missão é oferecer soluções sustentáveis,
+              eficientes e economicamente viáveis para que nossos clientes
+              possam aproveitar ao máximo os benefícios da energia solar.
             </p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sit
-              ipsa quis molestiae repellat? Nulla suscipit possimus a laudantium
-              ratione quos rerum pariatur explicabo, nihil maiores quod
-              recusandae accusamus asperiores.
+              Com uma equipe altamente qualificada e comprometida, trabalhamos
+              para garantir a excelência em cada etapa do processo, desde o
+              planejamento até a manutenção dos sistemas fotovoltaicos. Nosso
+              objetivo é proporcionar autonomia energética, redução de custos e
+              contribuir para um futuro mais sustentável.
+            </p>
+            <p>
+              Seja para residências, comércios ou indústrias, desenvolvemos
+              projetos personalizados de acordo com a necessidade de cada
+              cliente, sempre com tecnologia de ponta e suporte especializado.
+            </p>
+            <p>
+              Conte com a{' '}
+              <span className="font-semibold text-[#fba800]">Luminisol</span>{' '}
+              para transformar a luz do sol em energia limpa e renovável para
+              sua vida!
             </p>
           </div>
         </div>
@@ -264,9 +278,9 @@ export default function HomePage() {
           </p>
         </div>
         <div className="mt-8 flex w-full flex-wrap gap-6 font-semibold text-white">
-          <div className="relative h-48 w-full overflow-hidden rounded-[24px]">
+          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60">
             <Image
-              src="/background-mobile.jpg"
+              src="/carport-2.jpg"
               fill
               className="-z-10 h-auto w-full object-cover"
               alt=""
@@ -287,9 +301,9 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="relative h-48 w-full overflow-hidden rounded-[24px]">
+          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60">
             <Image
-              src="/background-mobile.jpg"
+              src="/residential.jpg"
               fill
               className="-z-10 h-auto w-full object-cover"
               alt=""
@@ -310,9 +324,9 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="relative h-48 w-full overflow-hidden rounded-[24px]">
+          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60">
             <Image
-              src="/background-mobile.jpg"
+              src="/comercial.jpg"
               fill
               className="-z-10 h-auto w-full object-cover"
               alt=""
@@ -333,9 +347,9 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="relative h-48 w-full overflow-hidden rounded-[24px]">
+          <div className="relative h-48 w-full overflow-hidden rounded-[24px] bg-[#003f59]/60">
             <Image
-              src="/background-mobile.jpg"
+              src="/large-power-plants.jpg"
               fill
               className="-z-10 h-auto w-full object-cover"
               alt=""
@@ -365,18 +379,18 @@ export default function HomePage() {
             <p className="font-semibold text-[#003f59]">Soluções</p>
           </div>
           <p className="mt-8 w-28 text-4xl font-bold text-[#fba800]">
-            Nossas <span className="text-[#003f59]">Soluçẽs</span>
+            Nossas <span className="text-[#003f59]">Soluções</span>
           </p>
         </div>
         <div className="mt-8 flex flex-wrap gap-6 text-xs font-semibold text-white">
           <div className="relative h-48 w-full overflow-hidden rounded-[24px]">
             <Image
-              src="/background-mobile.jpg"
+              src="/residential-3.jpg"
               fill
               className="-z-10 h-auto w-full object-cover"
               alt=""
             />
-            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 shadow-internal">
+            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60">
               <div className="mb-4 flex w-full items-center justify-center gap-2">
                 <div>
                   <House className="h-9 w-9" />
@@ -387,12 +401,12 @@ export default function HomePage() {
           </div>
           <div className="relative h-48 w-full overflow-hidden rounded-[24px]">
             <Image
-              src="/background-mobile.jpg"
+              src="/comercial-2.jpg"
               fill
               className="-z-10 h-auto w-full object-cover"
               alt=""
             />
-            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 shadow-internal">
+            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60">
               <div className="mb-4 flex w-full items-center justify-center gap-2">
                 <div>
                   <Building2 className="h-9 w-9" />
@@ -403,12 +417,12 @@ export default function HomePage() {
           </div>
           <div className="relative h-48 w-full overflow-hidden rounded-[24px]">
             <Image
-              src="/background-mobile.jpg"
+              src="/industri-2.jpg"
               fill
               className="-z-10 h-auto w-full object-cover"
               alt=""
             />
-            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 shadow-internal">
+            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60">
               <div className="mb-4 flex w-full items-center justify-center gap-2">
                 <div>
                   <Factory className="h-9 w-9" />
@@ -419,12 +433,12 @@ export default function HomePage() {
           </div>
           <div className="relative h-48 w-full overflow-hidden rounded-[24px]">
             <Image
-              src="/background-mobile.jpg"
+              src="/large-power-plant-2.jpg"
               fill
               className="-z-10 h-auto w-full object-cover"
               alt=""
             />
-            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 shadow-internal">
+            <div className="absolute inset-0 z-10 flex items-end justify-center gap-2 bg-[#003f59]/60">
               <div className="mb-4 flex w-full items-center justify-center gap-2">
                 <div>
                   <Tractor className="h-9 w-9" />
@@ -486,7 +500,7 @@ export default function HomePage() {
             <CircleChevronRight className="stroke-[#fba800]" />
             <p className="font-semibold">FAQ</p>
           </div>
-          <p className="w-28 text-4xl font-bold">Dúvidas frequentes</p>
+          <p className="mt-8 w-28 text-4xl font-bold">Dúvidas frequentes</p>
         </div>
         <Accordion
           type="single"
@@ -500,12 +514,13 @@ export default function HomePage() {
             <AccordionTrigger>
               <p>
                 Quais os benefícios da energia solar proporcionados pela{' '}
-                <span className="font-semibold">Luminisol</span>
+                <span className="font-semibold text-[#003f59]">Luminisol</span>
               </p>
             </AccordionTrigger>
             <AccordionContent>
-              A energia solar ofericida pela <span>Luminisol</span> reduz
-              significamente os custos de eletricidade, é ambientalmente
+              A energia solar ofericida pela{' '}
+              <span className="font-semibold text-[#003f59]">Luminisol</span>{' '}
+              reduz significamente os custos de eletricidade, é ambientalmente
               amigável, requer manutenção mínima e aumenta o valor de sua
               propriedade.
             </AccordionContent>
@@ -609,7 +624,7 @@ export default function HomePage() {
       </div>
       <footer
         ref={ref6}
-        className="flex w-full flex-wrap bg-[#003f59] px-10 py-8 text-sm text-white"
+        className="flex w-full flex-col bg-[#003f59] px-10 py-8 text-sm text-white"
       >
         <Image
           src="/logo.svg"
@@ -646,7 +661,7 @@ export default function HomePage() {
           <p>Segunda a sexta: 08:00 às 18:00</p>
           <p>Sábado: 08:00 às 12:00</p>
         </div>
-        <p className="mt-4">
+        <p className="mt-4 text-xs">
           &copy; Todos os direis reservados | Luminisol 2025, CNPJ
           12.123.123/0001-12
         </p>
