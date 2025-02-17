@@ -1,10 +1,13 @@
 'use client'
 
 import {
+  Building,
   Building2,
   ChartNoAxesCombined,
   ChevronRight,
   CircleChevronRight,
+  Cog,
+  Contact,
   Factory,
   HandCoins,
   House,
@@ -12,7 +15,9 @@ import {
   Mail,
   Menu,
   MessageCircleMore,
+  PanelsTopLeft,
   Sun,
+  TableOfContents,
   Tractor
 } from 'lucide-react'
 import Image from 'next/image'
@@ -90,42 +95,61 @@ export default function HomePage() {
                 className="justify-between font-semibold"
                 onClick={() => scrollTo(ref1, 95)}
               >
-                Quem Somos <ChevronRight />
+                <div className="flex h-full w-auto items-center gap-2">
+                  <Building className="h-14 w-14" /> Quem Somos
+                </div>
+                <ChevronRight />
               </Button>
               <Button
                 variant="link"
                 className="justify-between font-semibold"
                 onClick={() => scrollTo(ref2, 95)}
               >
-                Projetos <ChevronRight />
+                <div className="flex h-full w-auto items-center gap-2">
+                  <PanelsTopLeft className="h-14 w-14" /> Projetos
+                </div>
+                <ChevronRight />
               </Button>
               <Button
                 variant="link"
                 className="justify-between font-semibold"
                 onClick={() => scrollTo(ref3, 95)}
               >
-                Soluções <ChevronRight />
+                <div className="flex h-full w-auto items-center gap-2">
+                  <Cog className="h-14 w-14" /> Soluções
+                </div>
+                <ChevronRight />
               </Button>
+
               <Button
                 variant="link"
                 className="justify-between font-semibold"
                 onClick={() => scrollTo(ref4, 95)}
               >
-                Faça uma siulação <ChevronRight />
+                <div className="flex h-full w-auto items-center gap-2">
+                  <HandCoins className="h-14 w-14" /> Faça uma siulação
+                </div>
+                <ChevronRight />
               </Button>
               <Button
                 variant="link"
                 className="justify-between font-semibold"
                 onClick={() => scrollTo(ref5, 95)}
               >
-                FAQ <ChevronRight />
+                <div className="flex h-full w-auto items-center gap-2">
+                  <TableOfContents className="h-14 w-14" /> FAQ
+                </div>
+                <ChevronRight />
               </Button>
               <Button
                 variant="link"
                 className="justify-between font-semibold"
                 onClick={() => scrollTo(ref6, 95)}
               >
-                Contatos <ChevronRight />
+                <div className="flex h-full w-auto items-center gap-2">
+                  <Contact className="h-14 w-14" /> Contatos
+                </div>
+                <ChevronRight />
               </Button>
             </nav>
           </SheetContent>
@@ -205,11 +229,9 @@ export default function HomePage() {
           <div className="text-white">
             <div className="flex gap-1">
               <CircleChevronRight className="stroke-[#fba800]" />
-              <p>
-                <span className="font-semibold">Lumini</span>sol
-              </p>
+              <p>Quem somos</p>
             </div>
-            <p className="text-4xl font-bold">
+            <p className="mt-8 text-4xl font-bold">
               Conheça a <span className="text-[#fba800]">Luminisol</span>
             </p>
           </div>
@@ -342,7 +364,7 @@ export default function HomePage() {
             <CircleChevronRight className="stroke-[#fba800]" />
             <p className="font-semibold text-[#003f59]">Soluções</p>
           </div>
-          <p className="w-28 text-4xl font-bold text-[#fba800]">
+          <p className="mt-8 w-28 text-4xl font-bold text-[#fba800]">
             Nossas <span className="text-[#003f59]">Soluçẽs</span>
           </p>
         </div>
